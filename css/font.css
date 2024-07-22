@@ -1,0 +1,17 @@
+@font-face{
+    font-family:Gotham-Medium;
+    src:url(./fonts/Gotham-Medium.otf)
+}
+@font-face{
+    font-family:Gotham-Thin;
+    src:url(./fonts/Gotham-Thin.otf)
+}
+@font-face{
+    font-family:Gotham-Ultra;
+    src:url(./fonts/Gotham-Ultra.otf)
+}
+@font-face {
+    font-family: 'svn';
+    src: url('path-to-your-font-files/font-file.woff2') format('woff2'),
+         url('path-to-your-font-files/font-file.woff') format('woff');
+}

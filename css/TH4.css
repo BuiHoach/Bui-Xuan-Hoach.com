@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    /* height: 120px; */
+    width: 100%;
+}
+
+.top-heard {
+    background-color: #1E1F29;
+}
+
+/* .bg-top {
+    background-color: #1E1F29;
+} */
+.bg-nav {
+    background-color: #15161D;
+    border-bottom: 3px solid red;
+}
+
+.top {
+    height: 40px;
+}
+
+.top ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+.top ul li {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+
+.top ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top ul li a:hover {
+    color: red;
+}
+
+.top ul li i {
+    color: red;
+    margin: 0 5px;
+}
+
+.money {
+    float: inline-end;
+    padding-right: 12px;
+}
+
+.border-nav {
+    border-bottom: 2px solid #ccc;
+}
+
+.search {
+    height: 80px;
+    display: flex;
+
+}
+
+
+.logo {
+
+    line-height: 80px;
+    width: calc(100% - 70px) !important;
+    object-fit: cover;
+}
+
+.timkiem {
+    line-height: 80px;
+    text-align: center;
+}
+
+.form input {
+    height: 40px;
+    width: 200px;
+    border: 1px solid #ccc;
+    margin-left: -5px;
+    color: #a39a9a;
+    padding: 0 10px;
+}
+
+.form input[type="search"] {
+    border-radius: 0px 40px 40px 0px;
+    background-color: #D10024;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    width: 100px;
+}
+
+
+.form input:hover {
+    color: red;
+}
+
+.form select {
+    border-radius: 40px 0 0 40px;
+    width: 180px;
+    border: none;
+    color: red;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.form button:hover {
+    color: red;
+}
+
+.form input:hover {
+    color: red;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-1 {
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.box-1 i {
+    color: red;
+    padding: 0 5px;
+    margin-left: 20px;
+}
+
+.my-5 {
+    display: block;
+    overflow: hidden;
+}
+
+.my-5:hover img {
+    transform: scale(1.1);
+}
+
+.box-1 a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.box-1 a:hover {
+    color: blue;
+}
+
+.nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav li a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.nav-link:hover>span {
+    border-bottom: #D10024 2px solid;
+}
+
+.logog {
+    top: 0.25rem;
+    right: 0.25rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.new {
+    background-color: red;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px 15px;
+    font-size: 15px;
+}
+
+.new-item {
+    position: relative;
+}
+
+.mo-ta {
+    margin: -5px auto;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+}
+
+.mo-ta p {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8D99AE;
+    margin: 10px 0;
+    text-decoration: none;
+
+}
+
+.border {
+    display: block;
+    overflow: hidden;
+}
+
+.border:hover img {
+    transform: scale(1.1);
+    object-fit: contain;
+}
+
+.mo-ta.border.a {
+    text-decoration: none;
+}
+
+.mo-ta h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.mo-ta h4 {
+    margin: 10px 0;
+    text-decoration: none;
+    color: red;
+}
+
+.page li {
+    border: 1px solid #cccc;
+    list-style: none;
+    padding: 0px 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.page li:hover {
+    color: #fff;
+    background-color: red;
+}
+
+li a {
+    color: black;
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 50%;
+
+}
+
+h3 {
+    color: black;
+}
+
+.box-laptop {
+    position: relative;
+    margin-bottom: 0;
+
+}
+
+.box-laptop p {
+    font-size: 12px;
+    color: #8D99AE
+}
+
+.box-laptop h3 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.box-laptop h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: red;
+}
+
+.Column i {
+    color: red;
+    padding-right: 10px;
+}
+
+.Column {
+    background-color: #15161D;
+}
+
+.Column h3 {
+    color: #fff;
+}
+
+.Column li a {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #15161D;
+}
+
+.comment {
+    background-color: #15161D;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.box-product {
+    position: relative;
+}
+
+.box-product.border {
+    overflow: visible;
+
+}
+
+.them-sp {
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+}
+
+.box-product.border:hover .them-sp {
+    visibility: visible;
+
+}
+
+.them-sp:hover.btn-them-sp {
+    visibility: visible;
+}
+
+.btn-them-sp {
+    border-radius: 1rem;
+}
+
+.img-pro {
+    overflow: hidden;
+}
+
+.mo-ta .border:hover {
+    border: red 2px solid !important;
+}
+
+.btn-them-sp input {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #C82333;
+}
+
+/* .hover-them-sp:hover input{
+    transform: scale(.8);
+/* } */
+.them-sp:hover .btn {
+    left: 20%;
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #C82333;
+}
+
+p {
+    margin-bottom: .5rem;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.shop i :hover .shop i {
+    visibility: visible;
+}
+
+.shop i {
+    position: absolute;
+    bottom: 25%;
+    right: 80%;
+
+}
+
+.btn {
+    width: 150px;
+}
+
+.add-to-cart-btn {
+    background-color: #dc3545;
+    /* Bootstrap danger color */
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.add-to-cart-btn i {
+    margin-right: 8px;
+    /* Space between icon and text */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #fff;
+    /* Darker shade for hover */
+    transform: scale(1.1);
+    color: #D10024;
+    font-weight: bold;
+}
+
+.ghep {
+    position: absolute;
+
+    height: 100%;
+    background-color: skyblue;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.my-5 .border::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 60%;
+    background: #D10024;
+    opacity: 0.9;
+    -webkit-transform: skewX(-45deg);
+    
+}

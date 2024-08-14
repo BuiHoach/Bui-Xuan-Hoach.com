@@ -191,11 +191,12 @@ h6::after {
     position: relative;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width:1024px) {
     #list-product {
         display: block;
     }
-    .block{
+
+    .block {
         display: block !important;
         margin-bottom: 1rem;
     }
@@ -217,26 +218,38 @@ h6::after {
     .box-product p {
         text-align: center;
     }
+
     .box-product p {
         padding-bottom: 2rem;
         margin-bottom: 0;
-       
-   
+
+
     }
+
     footer {
         margin-top: -1rem;
     }
 }
-@media only screen and (max-width:767px) {
-    .nav-icon{
-        padding-right: 5.5rem;
-    }
-    .header-logo{
-        width: 30%;
-    }
-    header{
-        margin: 0;
-        position: absolute;
 
+@media only screen and (max-width:767px) {
+    #list-product .block {
+        display: block !important;
+    }
+    #list-product {
+        margin: 0 1rem;
+    }
+    .box-product img{
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .box-product h3 {
+        text-align: center;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .box-product{
+        padding-bottom: .5rem;
     }
 }

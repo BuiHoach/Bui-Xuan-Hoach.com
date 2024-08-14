@@ -501,6 +501,10 @@ h6::after {
     #newws .header-menu-1 .box-gia {
         display: contents;
     }
+    #news {
+        background-color: #F3F3F3;
+        padding-bottom: 1rem;
+    }
     #list-product{
         display: block;
     }

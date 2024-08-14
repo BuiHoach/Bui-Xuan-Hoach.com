@@ -1,12 +1,17 @@
-#newws .header-menu {
+#newws{
+    margin-top: 100px;
+    position: relative;
+}
+#newws .header-menu-1 {
     margin-left: 38px;
     position: absolute;
-    margin-top: .2rem;
+    margin-top: 1rem;
+    
 }
 
 #newws span {
     padding: 0 .5rem;
-    color: #BF9765;
+    color: #bd945f;
     font-family: Gotham-Medium;
     font-size: 15px;
 
@@ -125,6 +130,8 @@ h2 {
 
 #news .container-x {
     background-color: #fff;
+    top: 3rem;
+    position: relative;
 }
 
 #news {
@@ -136,15 +143,6 @@ h2 {
     margin: 0 2rem;
 }
 
-#news .container-x {
-    position: relative;
-
-}
-
-#news .container-x {
-    top: 2rem;
-
-}
 
 /*  */
 
@@ -281,6 +279,8 @@ h1 {
 /* footer */
 #bg {
     background-color: #363636;
+    position: relative;
+    top: 3rem;
 }
 
 footer {
@@ -359,12 +359,24 @@ h6::after {
     color: #D3D3D3;
     font-size: 30px !important;
 }
-
-/* .img-ghe img{
-    top: 100%;
-    left: 50%;
-} */
-#bg {
-    position: relative;
-    top: 2rem;
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .box-gia button {
+       width: 6.4rem;
+    }
+    .font-i i {
+        margin-left: 23.3rem;
+    }
+    .tab_content {
+        width: 31rem;
+        height: 10rem;
+    }
+    .clearfix {
+        display: flex;
+    }
+    #main {
+        width: 31.5rem;
+    }
+    h1::after {
+        left: 12%;
+    }
 }

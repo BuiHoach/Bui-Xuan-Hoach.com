@@ -1,3 +1,13 @@
+.sp {
+    margin-top: 100px;
+    position: relative;
+}
+
+.header-menu-1 {
+    padding-top: 1.5rem;
+    border: #D3D3D3 1px solid;
+}
+
 #carouselExampleControls span {
     border-radius: 50%;
     background: #fff;
@@ -15,11 +25,15 @@
     font-family: Gotham-Ultra;
     text-transform: uppercase;
     font-size: 15px;
-   
+
 }
-.cl-or{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.cl-or {
+    font-family: 'Edu_AU_VIC_WA_NT_Hand';
+    font-size: 40px;
+    margin-left: -2rem;
 }
+
 .cl-blue {
     color: #2c2e53;
     font-size: 25px;
@@ -49,7 +63,7 @@
 
 #banner .box-banner {
     position: absolute;
-    top: -14rem;
+    top: -9rem;
     left: 37rem;
 }
 
@@ -60,13 +74,17 @@
     position: absolute;
     margin-top: .2rem;
 }
+
 #newws span {
-    padding: 0 .5rem ;
+    padding: 0 .5rem;
     color: #BF9765;
     font-family: Gotham-Medium;
     font-size: 15px;
-    
-    
+
+
+}
+.carousel-item img {
+    height: 250px;
 }
 
 #newws b {
@@ -76,7 +94,7 @@
 
 
 h2 {
-   margin-left: 38px;
+    margin-left: 38px;
     font-size: 1.6rem;
     color: #2c2e53;
     text-transform: uppercase;
@@ -85,6 +103,7 @@ h2 {
     margin-bottom: -.5rem;
     padding-top: 2rem;
 }
+
 h2::after {
     content: "";
     position: absolute;
@@ -104,9 +123,10 @@ h2::after {
     background-color: #fff;
 }
 
-#news{
+#news {
     padding-bottom: 2rem;
 }
+
 #list-product {
     position: relative;
     margin: 0 1rem;
@@ -117,15 +137,16 @@ h2::after {
 }
 
 #news .container-x {
-    top: 2rem;
+    top: 0rem;
 
 }
+
 /*  */
 
-#list-product p{
+#list-product p {
     text-align: right;
     margin-bottom: .5rem;
-    font-family:Gotham-Medium;
+    font-family: Gotham-Medium;
     text-transform: uppercase;
     font-size: 15px;
     color: #36385B;
@@ -152,9 +173,10 @@ h2::after {
     margin-bottom: 2rem;
 }
 
-section{
+section {
     background-color: #D3D3D3;
 }
+
 .icon-star {
     display: flex;
     justify-content: center;
@@ -170,18 +192,26 @@ section{
     position: relative;
 }
 
+.box-product .imgs {
+    overflow: hidden;
+}
 
+.box-product img {
+    max-width: 100%;
+    transition: all 0.3 ease-in-out;
+}
 
-
-
-
-/* footer */
-#bg {
+.box-product :hover img {
+    transform: scale(1.1);
+}
+.check img{
+    width: 100%;
+}
+footer {
     background-color: #363636;
+    height: 10rem;
 }
-footer{
-    background-color: #D3D3D3;
-}
+
 .container h6 {
     color: #D3D3D3;
     padding-top: 2rem;
@@ -190,8 +220,9 @@ footer{
 
 .container h5 {
     color: #D3D3D3;
-    /* font-family: monospace; */
+    font-family: monospace;
     font-size: 1rem;
+    font-family: Gotham-Medium;
 }
 
 .box-distance span {
@@ -203,10 +234,14 @@ footer{
 .box-distance a {
     color: #D3D3D3;
     font-size: 13px;
+    font-family: Gotham-Thin;
 }
 
 h6 {
     position: relative;
+    text-transform: uppercase;
+    font-family: Gotham-Medium;
+    font-size: 15px;
 }
 
 h6::after {
@@ -224,6 +259,7 @@ h6::after {
     color: #D3D3D3;
     font-size: 13px;
     margin-bottom: 5px;
+    font-family: Gotham-Thin;
 
 }
 
@@ -238,9 +274,9 @@ h6::after {
 }
 
 .check img {
-    width: 30%;
+    width: 40%;
     height: 50px;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
 }
 
 .box-icons img {
@@ -255,11 +291,157 @@ h6::after {
     font-size: 30px !important;
 }
 
-/* .img-ghe img{
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    section {
+        background-color: #D3D3D3;
+        border: 1px solid #D3D3D3;
+    }
+
+    /* footer */
+    #bg {
+        background-color: #363636;
+    }
+
+    footer {
+        background-color: #D3D3D3;
+    }
+
+    .container h6 {
+        color: #D3D3D3;
+        padding-top: 2rem;
+
+    }
+
+    .container h5 {
+        color: #D3D3D3;
+        /* font-family: monospace; */
+        font-size: 1rem;
+    }
+
+    .box-distance span {
+        padding-right: 10px;
+        color: #D3D3D3;
+
+    }
+
+    .box-distance a {
+        color: #D3D3D3;
+        font-size: 13px;
+    }
+
+    h6 {
+        position: relative;
+    }
+
+    h2::after {
+        left: 12%;
+    }
+
+    h6::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 3rem;
+        height: 3px;
+        left: 0%;
+        background-color: #D3D3D3;
+    }
+
+    .box-distance p {
+        margin-bottom: 0;
+        color: #D3D3D3;
+        font-size: 13px;
+        margin-bottom: 5px;
+
+    }
+
+    .box-sap-xep {
+        display: none;
+    }
+
+    .text-center h6::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 3rem;
+        height: 3px;
+        left: 36%;
+        background-color: #D3D3D3;
+    }
+
+    .check img {
+        width: 30%;
+        height: 50px;
+        margin-top: 1rem;
+    }
+
+    .box-icons img {
+        height: 25px;
+        margin-bottom: 14px;
+        padding: 0 5px;
+        color: #D3D3D3;
+    }
+
+    .box-icons i {
+        color: #D3D3D3;
+        font-size: 30px !important;
+    }
+
+    /* .img-ghe img{
     top: 100%;
     left: 50%;
 } */
-#bg {
-    position: relative;
-    top: 2rem;
+    #bg {
+        position: relative;
+        top: 2rem;
+    }
+
+    #banner .box-banner {
+        position: absolute;
+        top: -9rem;
+        left: 18rem;
+        opacity: 3;
+
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #banner {
+        display: block;
+    }
+    #news .container-x {
+        top: 0rem;
+    }
+    .check img{
+        width: 50%;
+    }
+    #banner .box-banner {
+        position: absolute;
+        top: -9rem;
+        left: 9.5rem;
+    }
+    .cl-or {
+        font-size: 20px;  
+    }
+    .cl-blue {
+        color: #2c2e53;
+        font-size: 15px;
+    }
+    .mx-4 {
+        margin-right: 0 !important;
+        margin-left: 0rem !important;
+    }
+    #banner button {
+        padding: .1rem .5rem;
+        margin-left: 4rem;
+    }
+    #list-product .col-3{
+        width: 50%;
+        display: block;
+    }
+    h2::after {
+        left: 23%;
+    }
+
 }

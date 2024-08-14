@@ -19,7 +19,9 @@ li {
 a {
     text-decoration: none;
 }
-
+.header-bgr{
+    margin-top: 10px;
+}
 .cl-blue {
     color: #2c2e53;
 }
@@ -38,18 +40,26 @@ a {
 
 
 header {
-    margin: 1rem;
+    position: fixed;
+    z-index: 23;
+    background-color:#fff;
+    width: 100%;
+    margin: 0;
+    margin-top: -100px;
+    height: 115px;
 }
 
 #header-nav ul li a {
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #000;
+   
+   
 }
-
 #header-nav li {
     margin-left: 2.6rem;
     position: relative;
+    font-family: Gotham-Medium;
 }
 
 #header-nav ul li:hover ::before {
@@ -60,44 +70,17 @@ header {
     height: 0.2rem;
     background-color: #bd945f;
 }
-
-#header-nav .nav-icon {
-    text-align: right;
+.nav-icon i{
+    float: right;
     display: none;
-    cursor: pointer;
 }
-
-#header-menu {
+.header-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 200px;
 }
-
-.nav_overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: none;
-}
-
-.header-nav-table {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 320px;
-    max-width: 100%;
-    background-color: #fff !important;
-    margin-left: 15rem;
-    display: none;
-}
-
-#header-menu-table {}
-
 @media (min-width: 1400px) {
 
     .container,
@@ -111,380 +94,186 @@ header {
     }
 }
 
-@media (min-width: 767px) and (max-width:1024px) {
+@media only screen and (min-width:  46.25em) and (max-width:63.9375em) {
     body {
         max-width: 1024px;
     }
-
-    html {
-        margin-left: .5rem
-    }
-
     .container {
-        max-width: 1024px;
+        width: 100%;
+        
     }
-
-    #header-menu {
-        display: none !important;
-
-
-    }
-
-    #header-nav .nav-icon {
+    .nav-icon i{
+        cursor: pointer;
         display: block;
+        margin-top: 40px;
     }
-
-
-
-    .box-category img {
-        width: 50%;
-
+    .active {
+        display: block !important;
     }
-
-    #about-us {
-        background-image: url("/img/AnhCatTC/ve-chung-toi/bg-about-us.jpg");
-        height: 54rem;
-        position: relative;
-    }
-
-    #about-us .about-us-bottom .box-about-us {
-        height: 100px;
-    }
-
-    #news .box-news {
+    .header-bgr{
         display: flex;
         justify-content: space-between;
-
     }
-
-    #news .news-right p {
-        font-family: Gotham-Thin;
-        color: #000;
-        text-align: justify;
-        width: 11.5rem;
-        margin-left: -2rem;
-        font-size: .4rem;
-        font-weight: bold;
-
+    .header-menu{
+        margin-top: 80px;
+        display: none;
+        height: auto;
+        height: 100%;
+        position: relative;
+        margin-left: 0;
     }
-
-    #news .news-right a {
-        color: #bd945f;
-        text-transform: uppercase;
-
-    }
-
-    #news .content-news {
-        background-color: #bd945f;
-        padding: 1rem 1rem 1rem 2rem;
+    .header-menu::before{
+        content: "";
+        background-color: aqua;
         position: absolute;
-        bottom: 0;
+        top: 15px;
+        left: -140px;
+        right: 10px;
+        width: 200%;
+        height: 80%;
+    }
+    #toggleClas:checked ~ .header-menu{
+        max-height: 100%;
+    }
+    .header-menu li a{
+        display: block;
+        overflow: hidden;
+        padding-top: 25px;
+        font-size: 20px;
 
     }
-
-    #news .news-right h4 {
-        color: #bd945f;
-        font-size: 0.9rem;
-        margin-bottom: 0;
-
+    .nav-icon {
+        display: block;
+        text-align: right; 
     }
-
-    .content-p {
-        margin-left: 0 !important;
+    
+    
+    
+    #header-nav{
+        width: 100%;
     }
-
-    .img-news img {
-        margin-left: -1.7rem;
+    #header-nav{
+        width: 100%;
     }
-
-    #news .content-news {
-        background-color: #bd945f;
-        padding: 1rem 1rem 1rem 2rem;
+    #header-nav ul li:hover ::before {
+        content: "";
         position: absolute;
-        bottom: 0;
-        width: 100%;
-        margin-left: -1.7rem;
-
-
+        top: 100%;
+        width: 15%;
+        height: 0.2rem;
+        background-color: #bd945f;
     }
-
-    #news .content-news p {
-        text-align: justify;
-        width: 100%;
-        color: #2c2e53;
-
-    }
-
-    #lien-he .lien-he-left {
-        margin-left: 7rem;
-        width: 15rem;
-
-    }
-
-    .lien-he-top {
-        font-family: Gotham-Medium;
-        font-size: 19px;
-
-    }
-
-    .lien-he-bottom {
-        font-family: Gotham-Medium;
-        font-size: 17px;
-    }
-
-    .img-ghe img {
-        height: 250px;
-        width: 105px;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-
-
-    #lien-he .form-label {
-        color: #fff;
-        font-family: Gotham-Medium;
-        font-size: 14px;
-    }
-
-    #lien-he button {
-        background-color: #fff;
-        border: 0;
-        font-size: 1rem;
-        height: 2rem;
-        margin-bottom: .3rem;
-        font-family: Gotham-Medium;
-        color: #2c2e53;
-    }
-
-    #lien-he input {
-        width: 100%;
-        height: 2rem;
-        border-radius: 0;
-
-    }
-
-    footer {
-        background-color: #363636;
-        height: 10rem;
-        display: flex;
-    }
-
-    .col-lg-5 {
+     /* footer */
+     .col-lg-5 {
         width: 45%;
+        gap: 4;
     }
 
     .col-lg-4 {
-        width: 25%;
+        width: 20%;
+       
     }
-
     .col-lg-3 {
-        width: 30%;
+        width: 35%;
     }
-
-
+   
 
 }
 
-@media (min-width: 375px) {
 
-    header {
-        position: relative;
-    }
-    html{
+@media only screen and (max-width:767px) {
+
+
+    html {
         width: 100% !important;
     }
-    body{
-        min-width: 375px;
-    }
-    #header-nav {
-        display: flex;
-        align-items: center;
-    }
 
-    #header-nav .fa-solid.fa-bars {
+
+    .nav-icon i{
+        cursor: pointer;
         display: block;
-    }
+        margin-top: 40px;
+       padding-right: .5rem;
 
-    #header-menu {
-        display: none !important;
     }
-
-    #header-nav .nav-icon {
+    .active {
+        display: block !important;
+    }
+    .header-bgr{
         display: flex;
-        justify-content: end;
-        align-items: center;
+        justify-content: space-between;
+    }
+    .header-menu{
+        margin-top: 80px;
+        display: none;
+        height: auto;
         height: 100%;
-        
-
-    }
-
-    header {
         position: relative;
-        padding: 0;
+        margin-left: 0;
     }
+    .header-menu::before{
+        content: "";
+        background-color: aqua;
+        position: absolute;
+        top: 15px;
+        left: -140px;
+        right: 10px;
+        width: 200%;
+        height: 80%;
+    }
+    #toggleClas:checked ~ .header-menu{
+        max-height: 100%;
+    }
+    .header-menu li a{
+        display: block;
+        overflow: hidden;
+        padding-top: 25px;
+        font-size: 20px;
 
-    #header-nav {
+    }
+    #header-nav li {
+        margin-left: 0;
+    }
+    .nav-icon {
+        display: block;
+        text-align: right; 
+    }
+    
+    #header-nav{
         width: 100%;
-        justify-content: right;
     }
-
+    #header-nav{
+        width: 100%;
+    }
     #header-nav ul li:hover ::before {
-        width: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 15%;
+        height: 0.2rem;
         background-color: #bd945f;
     }
-    /* ban */
-    #banner h3 span {
-        font-size: 1rem;
+    /* footer */
+    footer{
+        display: block;
+        height: 100%;
     }
-    #banner .box-banner {
-        left: 0.5rem;
-    }
-
-    #banner p {
-        width: 17rem;
-    }
-    /* category */
-    #category {
-        width: 96%;
-    }
-    .box-category img {
+    .col-lg-5{
         width: 100%;
-
+        text-align: center;
     }
-
-    #product {
-        margin-top: -6rem;
+    .col-lg-4{
+        width: 100%;
+        text-align: center;
     }
-
-    #news .news-right p {
-        font-family: Gotham-Thin;
-        color: #000;
-        text-align: justify;
+    .col-lg-3{
+        width: 100%;
+        text-align: center;
+    }
+    h6::after {
         width: 5rem;
-        margin-left: -2rem;
-        font-size: 1rem;
-        font-weight: bold;
-
-    }
-
-    #about-us .about-us-top p {
-        opacity: 0;
-        margin-bottom: -11rem;
-    }
-
-    #about-us .img-about-us a {
-        font-size: 0.4rem;
-
-    }
-
-    #about-us .about-us-top h3 {
-        font-size: .958rem;
-    }
-
-    #about-us .about-us-bottom .logo-about-us {
-        margin: 0;
-    }
-
-    #about-us .about-us-bottom h5 {
-        width: 10rem;
-        font-size: .8rem;
-    }
-
-    #about-us .about-us-bottom p {
-        width: 6rem;
-        font-size: .5rem;
-    }
-
-    #about-us {
-        height: 43rem;
-    }
-
-    #about-us::after {
-        height: 43rem;
-    }
-
-    #news .news-right p {
-        width: 7rem;
-        margin-left: -1rem;
-        font-size: .3rem;
-        font-weight: bold;
-    }
-
-    #news .content-news h4 {
-        color: #fff;
-        font-size: 1.1rem;
-        margin-bottom: -0.5rem;
-        margin: 1rem .5rem;
-        text-align: justify;
-    }
-
-    #news .news-right h4 {
-        color: #bd945f;
-        font-size: 0.9rem;
-        margin-bottom: 0;
-        height: 1rem;
-    }
-
-    #news .news-right .img-news img {
-        max-width: 192px;
-        max-height: 150px;
-        object-fit: cover;
-        margin-top: 0rem;
-    }
-
-    #news .content-news p {
-        overflow: hidden;
-        opacity: 0;
-        margin-top: 1rem;
-    }
-
-    #news .content-news {
-        height: 8.2rem;
-        padding: 0;
-    }
-
-    #doi-tac {
-        padding: 3rem 0 0 0;
-    }
-
-    .img-ghe img {
-        height: 200px;
-        width: 140px;
-        margin-left: 1rem;
-        margin-top: 2rem;
-    }
-
-    #lien-he .lien-he-left {
-        opacity: 0;
-    }
-
-    #lien-he input {
-        width: 200px;
-        height: 2rem;
-        border-radius: 0;
-        font-size: 12px;
-        margin-left: -1rem;
-    }
-
-    #lien-he button {
-        padding: 5px 30px;
-        font-size: 12px;
-        margin-bottom: 8.1rem;
-    }
-
-    .col-lg-5 {
-        width: 45%;
-        height: 10rem;
-    }
-
-    .col-lg-4 {
-        width: 25%;
-    }
-
-    .col-lg-3 {
-        width: 30%;
+        height: 5px;
+        left: 38%;
     }
 
 }

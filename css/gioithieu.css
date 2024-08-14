@@ -3,7 +3,14 @@
     height: 310px;
     background-position: center;
     background-size: cover;
+    margin-top: 100px;
+    position: relative;
 
+}
+
+#banner {
+    margin-top: 100px;
+    position: relative;
 }
 
 .box-banner img {
@@ -18,10 +25,11 @@
 #banner h3 {
     text-align: center;
     color: #fff;
-    font-family:Gotham-Ultra;
+    font-family: Gotham-Ultra;
     font-size: 35px;
     padding-top: 10px;
 }
+
 /*  */
 #news {
     background-color: #D3D3D3;
@@ -58,6 +66,7 @@ h2::after {
     height: 298px;
 }
 
+
 h3 {
     padding-top: 3rem;
     color: #B69A78;
@@ -69,8 +78,9 @@ h3 {
 .box-product {
     margin-left: 3rem;
 }
+
 .row {
-    --bs-gutter-x:0;
+    --bs-gutter-x: 0;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
@@ -90,30 +100,36 @@ h2 {
     margin-bottom: 2.6rem;
     padding-top: 3rem;
 }
-.box-product p{
+
+.box-product p {
     font-family: Gotham-Medium;
     font-size: 14.5px;
     font-weight: bold;
-    margin-bottom:.5rem;
+    margin-bottom: .5rem;
     text-align: justify;
 }
-.box-product span{
+
+.box-product span {
     font-family: Gotham-Medium;
     font-size: 15.6px;
     font-weight: bold;
     text-align: center;
 }
+
 .col-12 {
     width: 89%;
     text-align: center;
 }
+
 .col-6 {
     flex: 0 0 auto;
     width: 50%;
 }
+
 #news .img-about-us {
     position: relative;
 }
+
 #news .box-about-us {
     display: flex;
     background-color: #fff;
@@ -124,10 +140,8 @@ h2 {
     margin-bottom: 2rem;
     padding: 1rem 0;
 }
-#news img {
-    width: 100%;
-}
-#news  h5 {
+
+#news h5 {
     font-family: Gotham-Medium;
     color: #bd945f;
     padding: 0;
@@ -141,10 +155,12 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
-.content-about-us p{
+
+.content-about-us p {
     font-size: 12px;
     margin-bottom: 0;
 }
+
 /* footer */
 footer {
     background-color: #363636;
@@ -223,11 +239,13 @@ h6::after {
     margin-bottom: 14px;
     padding: 0 5px;
     color: #D3D3D3;
-} 
-.box-icons i{
-    color: #D3D3D3;
-    font-size: 30px!important;
 }
+
+.box-icons i {
+    color: #D3D3D3;
+    font-size: 30px !important;
+}
+
 /* .img-ghe img{
     top: 100%;
     left: 50%;
@@ -236,5 +254,83 @@ h6::after {
     position: relative;
 }
 
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+    #list-product {
+        width: 100%;
+        padding: 0 1rem;
+    }
 
+    .box-product {
+        width: 100%;
+        margin-left: 0;
 
+    }
+    #news .container-x {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    .box-product img {
+        width: 100%;
+    }
+
+    .box-product p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .reset {
+        display: block;
+    }
+
+    .col-6 {
+        width: 100%;
+        padding-bottom: .5rem;
+    }
+    
+}
+@media only screen and (max-width:767px) {
+    #news .row{
+        display: block;
+    }
+    #news .container-x {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    #list-product{
+        margin: 0 1rem;
+        
+    }
+    
+    #list-product .col-5{
+        width: 100%;
+        margin-left: 0;
+
+        
+    }
+    .box-product p {
+        margin-bottom: 0rem;
+        margin-top: .5rem;
+    }
+    
+    #list-product .col-12{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    #list-product .col-12  {
+        text-align: justify;
+    }
+    #news .row {
+        display: block;
+        /* margin: 0 1rem; */
+    }
+    #news .col-6{
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    #news .box-about-us {
+        margin-bottom: 0;
+        
+    }
+}

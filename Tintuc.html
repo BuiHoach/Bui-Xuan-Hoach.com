@@ -13,21 +13,19 @@
     <link rel="stylesheet" href="/css/tintuc.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between header-bgr">
                 <div class="header-logo">
                     <img class="w-100" src="/img/logo.jpg" alt="logo">
                 </div>
                 <nav id="header-nav">
-                    <div class="nav-icon">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                    </div>
-                    <ul id="header-menu" class="d-flex justify-content-between align-items-center h-100">
+                    <ul class="header-menu ">
                         <li>
                             <a href="/Photoshop.html">Trang chủ</a>
                         </li>
@@ -47,17 +45,29 @@
                             <a href="/Lienhe.html">liên hệ</a>
                         </li>
                     </ul>
+
                 </nav>
+                <div class="nav-icon" >
+                    <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
+                </div>
             </div>
         </div>
     </header>
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('.header-menu').toggleClass('active');
+            });
+        });
+    </script>
     <section id="news">
         <div class="container">
             <div class="container-x">
                 <h2>Tin tức</h2>
                 <div id="list-product" class="row">
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-1.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -68,7 +78,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-2.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -79,7 +89,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-3.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -90,7 +100,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-1.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -101,7 +111,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-2.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -112,7 +122,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-3.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -123,7 +133,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-1.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -134,7 +144,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-2.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>
@@ -145,7 +155,7 @@
                         </div>
                     </div>
                     <div class="box-product col-4">
-                        <div class="img ">
+                        <div class="imgs ">
                             <img class="w-100" src="/img/AnhCat/tin-tuc/tintuc-3.png" alt="sp-1">
                         </div>
                         <h3 class="product-title">NGẤT NGÂY VỚI TOP 10 MẪU NỘI THẤT CHUNG CƯ 1 PHÒNG NGỦ ĐẸP</h3>

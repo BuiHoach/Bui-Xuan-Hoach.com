@@ -12,19 +12,17 @@
     <link rel="stylesheet" href="/css/xemtatca_sp.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/font.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="header-bgr">
                 <div class="header-logo">
                     <img class="w-100" src="/img/logo.jpg" alt="logo">
                 </div>
                 <nav id="header-nav">
-                    <div class="nav-icon">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                    </div>
-                    <ul id="header-menu" class="d-flex justify-content-between align-items-center h-100">
+                    <ul class="header-menu ">
                         <li>
                             <a href="/Photoshop.html">Trang chủ</a>
                         </li>
@@ -44,12 +42,24 @@
                             <a href="/Lienhe.html">liên hệ</a>
                         </li>
                     </ul>
+
                 </nav>
+                <div class="nav-icon" >
+                    <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
+                </div>
             </div>
         </div>
     </header>
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('.header-menu').toggleClass('active');
+            });
+        });
+    </script> -->
     <!-- banner -->
-     <section>
+     <!-- <section>
          <div id="banner">
             <div class="container">
                 <div class="box-banner">
@@ -65,7 +75,7 @@
      </section>
     <section id="newws">
         <div class="container">
-            <div class="header-menu">
+            <div class="header-menu-1">
                 <span>Chọn mức giá:</span>
                 <div class="box-gia">
                     <span>Dưới 5 triệu</span>
@@ -99,7 +109,7 @@
                 <div id="list-product" class="row">
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ban-uong-nuoc.png"
                                     alt="sp-1">
                             </div>
@@ -123,7 +133,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ban-uong-nuoc-2.png"
                                     alt="sp-1">
                             </div>
@@ -147,7 +157,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ke-ti-vi.png"
                                     alt="sp-1">
                             </div>
@@ -171,7 +181,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/sp-4.jpg" alt="sp-1">
                             </div>
                             <div>
@@ -196,7 +206,7 @@
                 <div id="list-product" class="row">
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_03.jpg"
                                     alt="sp-1">
                             </div>
@@ -220,7 +230,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_05.jpg"
                                     alt="sp-1">
                             </div>
@@ -244,7 +254,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_07.jpg"
                                     alt="sp-1">
                             </div>
@@ -268,7 +278,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_09.jpg" alt="sp-1">
                             </div>
                             <div>
@@ -293,7 +303,7 @@
                 <div id="list-product" class="row">
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_16.jpg"
                                     alt="sp-1">
                             </div>
@@ -317,7 +327,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_17.jpg"
                                     alt="sp-1">
                             </div>
@@ -341,7 +351,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_19.jpg"
                                     alt="sp-1">
                             </div>
@@ -365,7 +375,7 @@
                     </div>
                     <div class="box-product col-3">
                         <div>
-                            <div class="img">
+                            <div class="imgs">
                                 <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_20.jpg" alt="sp-1">
                             </div>
                             <div>
@@ -400,20 +410,393 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
+    </section> -->
     <!-- footer -->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between header-bgr">
+                <div class="header-logo">
+                    <img class="w-100" src="/img/logo.jpg" alt="logo">
+                </div>
+                <nav id="header-nav">
+                    <ul class="header-menu ">
+                        <li>
+                            <a href="/Photoshop.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="/Gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="/Sanpham.html">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="/Tintuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="/Đoitac.html">Đối tác</a>
+                        </li>
+                        <li>
+                            <a href="/Lienhe.html">liên hệ</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div class="nav-icon" >
+                    <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('.header-menu').toggleClass('active');
+            });
+        });
+    </script>
+
+        <div id="banner">
+            <div class="container">
+                <div class="box-banner">
+                    <h5>
+                        <span class="cl-or">Trải nghiệm
+                        </span>
+                        <br>
+                        <span class="cl-blue mx-4">Không gian hiện đại</span>
+                    </h5>
+                    <a href="/Xemtatca_sp.html"><button>Mua ngay</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newws">
+        <div class="container">
+            <div class="header-menu-1">
+                <span>Chọn mức giá:</span>
+                <div class="box-gia">
+                    <span>Dưới 5 triệu</span>
+                    <span>5 - 10 triệu</span>
+                    <span>10 - 15 triệu</span>
+                    <span>15 triệu</span>
+                </div>
+                <div class="box-sap-xep">
+                    <span>Sắp xếp</span>
+                    <a href=""><span><i class="fa-solid fa-caret-down"></i></span>
+                        <div  class="box-grup row">
+                            <div class="box-check col-3">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="mo-ta col-9">
+                                <p>mới nhất</p>
+                                <p>Phổ biến nhất</p>
+                                <p>Giá cao đến thấp</p>
+                                <p>Día thấp đến cao</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container">
+            <div class="container-x">
+                <h2>Phòng khách</h2>
+                <div id="list-product" class="row">
+                    <p>xem tất cả</p>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ban-uong-nuoc.png"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Bàn uống nước</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu đậm)
+                                </div>
+                                <div class="product-price">
+                                    8.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ban-uong-nuoc-2.png"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Bàn uống nước 2</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu vân gỗ)
+                                </div>
+                                <div class="product-price">
+                                    3.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/phong-khach-ke-ti-vi.png"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Kệ tv</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, gỗ lim)
+                                </div>
+                                <div class="product-price">
+                                    12.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/san-pham-noi-bat/sp-4.jpg" alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Kệ để đồ</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, trắng gỗ)
+                                </div>
+                                <div class="product-price">
+                                    2.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="list-product" class="row">
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_03.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">SOFA</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu đậm)
+                                </div>
+                                <div class="product-price">
+                                    8.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_05.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">SOFA 2</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu vân gỗ)
+                                </div>
+                                <div class="product-price">
+                                    3.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_07.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Bàn uống nước</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, gỗ lim)
+                                </div>
+                                <div class="product-price">
+                                    12.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_09.jpg" alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Bàn uống nước</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, trắng gỗ)
+                                </div>
+                                <div class="product-price">
+                                    2.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="list-product" class="row">
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_16.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Bàn uống nước</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu đậm)
+                                </div>
+                                <div class="product-price">
+                                    8.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_17.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Kệ đồ</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (Size vừa, nâu vân gỗ)
+                                </div>
+                                <div class="product-price">
+                                    3.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_19.jpg"
+                                    alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Kệ đồ 2</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, gỗ lim)
+                                </div>
+                                <div class="product-price">
+                                    12.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div>
+                            <div class="imgs">
+                                <img class="w-100" src="/img/AnhCatTC/images/XEMTATCA_SANPHAM_20.jpg" alt="sp-1">
+                            </div>
+                            <div>
+                                <h3 class="product-title">Giá đồ</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    (4 ngăn, trắng gỗ)
+                                </div>
+                                <div class="product-price">
+                                    2.999.000 VND
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+    
     <footer>
         <div id="bg">
             <div class="container ">

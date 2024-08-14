@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/lienhe.css">
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -20,15 +21,12 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between header-bgr">
                 <div class="header-logo">
                     <img class="w-100" src="/img/logo.jpg" alt="logo">
                 </div>
                 <nav id="header-nav">
-                    <div class="nav-icon">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                    </div>
-                    <ul id="header-menu" class="d-flex justify-content-between align-items-center h-100">
+                    <ul class="header-menu ">
                         <li>
                             <a href="/Photoshop.html">Trang chủ</a>
                         </li>
@@ -48,10 +46,22 @@
                             <a href="/Lienhe.html">liên hệ</a>
                         </li>
                     </ul>
+
                 </nav>
+                <div class="nav-icon" >
+                    <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
+                </div>
             </div>
         </div>
     </header>
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('.header-menu').toggleClass('active');
+            });
+        });
+    </script>
     <section id="banner">
         <div class="container">
             <div class="box-banner">
@@ -66,7 +76,7 @@
         <div class="container">
             <div class="container-x">
                 <div id="list-product" class="row">
-                    <div class="box-product col-5">
+                    <div class="box-product col-6">
                         <div class="img ">
                             <img class="w-100" src="/img/AnhCat/sp-1.jpg" alt="sp-1">
                         </div>
@@ -75,9 +85,9 @@
                         <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
                         <div class="box-input">
                             <input type="text" placeholder="Họ Tên">
-                            <input type="text" placeholder="Họ Tên">
-                            <input type="text" placeholder="Họ Tên">
-                            <input type="text" placeholder="Họ Tên">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Số điện thoại">
+                            <input type="text" placeholder="Nội dung">
                             <button>Gửi</button>
                         </div>
                     </div>

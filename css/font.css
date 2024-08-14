@@ -11,7 +11,6 @@
     src:url(./fonts/Gotham-Ultra.otf)
 }
 @font-face {
-    font-family: 'svn';
-    src: url('path-to-your-font-files/font-file.woff2') format('woff2'),
-         url('path-to-your-font-files/font-file.woff') format('woff');
+    font-family: Edu_AU_VIC_WA_NT_Hand;
+    src: url(./Edu_AU_VIC_WA_NT_Hand/EduAUVICWANTHand-VariableFont_wght.ttf);
 }

@@ -4,6 +4,8 @@
     height: 310px;
     background-position: center;
     background-size: cover;
+    margin-top: 100px;
+    position: relative;
 
 }
 
@@ -11,6 +13,12 @@
     font-family: Gotham-Ultra;
     text-transform: uppercase;
     font-size: 15px;
+}
+
+.cl-or {
+    font-family: 'Edu_AU_VIC_WA_NT_Hand';
+    font-size: 40px;
+    margin-left: -2rem;
 }
 
 .cl-blue {
@@ -29,9 +37,9 @@
     margin-left: 8.1rem;
 }
 
-#banner .container {
+/* #banner .container {
     position: relative;
-}
+} */
 
 #banner .box-banner {
     position: absolute;
@@ -47,7 +55,7 @@
     font-size: 15px;
 }
 
-#newws .header-menu .box-gia {
+#newws .header-menu-1 .box-gia {
     font-size: 15px;
     font-family: Gotham-Medium;
     margin-top: -24px;
@@ -58,7 +66,7 @@
     color: #BF9765 !important;
 }
 
-#newws .header-menu .box-sap-xep {
+#newws .header-menu-1 .box-sap-xep {
     font-size: 15px;
     font-family: Gotham-Medium;
     margin-top: -30px;
@@ -111,7 +119,7 @@
 }
 
 /*  */
-#newws .header-menu {
+#newws .header-menu-1 {
     margin-left: 38px;
     position: absolute;
     margin-top: 3rem;
@@ -160,6 +168,19 @@
 
 }
 
+.box-product .imgs {
+    overflow: hidden;
+}
+
+.box-product img {
+    max-width: 100%;
+    transition: all 0.3 ease-in-out;
+}
+
+.box-product :hover img {
+    transform: scale(1.1);
+}
+
 /*  */
 h2 {
     margin-left: 38px;
@@ -185,6 +206,7 @@ h2::after {
 
 #news {
     background-color: #F3F3F3;
+    padding-bottom: 7rem;
 }
 
 #news .container-x {
@@ -211,6 +233,7 @@ h2::after {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .icon-star {
     display: flex;
     justify-content: center;
@@ -226,10 +249,6 @@ h2::after {
     position: relative;
 }
 
-
-#news {
-    padding-bottom: 2rem;
-}
 /*  */
 .page-links {
     padding: 1px 5px;
@@ -240,13 +259,15 @@ h2::after {
     font-size: 12px;
     margin-bottom: 1rem;
 }
+
 .pagination {
     display: flex;
     padding-left: 0;
     list-style: none;
     padding-bottom: 1rem;
 }
-.page-links:hover{
+
+.page-links:hover {
     background: #E7BE90;
 }
 
@@ -343,4 +364,150 @@ h6::after {
 #bg {
     position: relative;
     top: 5.5rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    #banner .box-banner {
+        position: absolute;
+        top: 3rem;
+        left: 21rem;
+    }
+
+    section {
+        background-color: #D3D3D3;
+        border: 1px solid #D3D3D3;
+    }
+
+    /* footer */
+    #bg {
+        background-color: #363636;
+    }
+
+    footer {
+        background-color: #D3D3D3;
+    }
+
+    .container h6 {
+        color: #D3D3D3;
+        /* padding-top: 2rem; */
+
+    }
+
+    .container h5 {
+        color: #D3D3D3;
+        /* font-family: monospace; */
+        font-size: 1rem;
+    }
+
+    .box-distance span {
+        padding-right: 10px;
+        color: #D3D3D3;
+
+    }
+
+    .box-distance a {
+        color: #D3D3D3;
+        font-size: 13px;
+    }
+
+    h6 {
+        position: relative;
+    }
+
+    h6::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 3rem;
+        height: 3px;
+        left: 0%;
+        background-color: #D3D3D3;
+    }
+
+    .box-distance p {
+        margin-bottom: 0;
+        color: #D3D3D3;
+        font-size: 13px;
+        margin-bottom: 5px;
+
+    }
+
+    h2::after {
+        left: 12%;
+    }
+
+
+    .check img {
+        width: 30%;
+        height: 50px;
+        margin-top: 1rem;
+    }
+
+    .box-icons img {
+        height: 25px;
+        margin-bottom: 14px;
+        padding: 0 5px;
+        color: #D3D3D3;
+    }
+
+    .box-icons i {
+        color: #D3D3D3;
+        font-size: 30px !important;
+    }
+
+    /* .img-ghe img{
+    top: 100%;
+    left: 50%;
+} */
+    #bg {
+        position: relative;
+        top: 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .box-sap-xep{
+        display: none;
+    }
+    #banner .box-banner {
+        position: absolute;
+        top: 3rem;
+        left: 9rem;
+    }
+    .cl-blue {
+        font-size: 15px;
+    }
+    .cl-or {
+        font-size: 30px;
+    }
+    #banner button {
+        font-family: Gotham-Ultra;
+        padding: .2rem .5rem;
+        background-color: #fff;
+        color: #2c2e53;
+        text-transform: uppercase;
+        border: none;
+        font-size: .5rem;
+        margin-left: 5rem;
+    }
+    .mx-4 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    #newws .header-menu-1 {
+        margin-left: 0px;
+        position: absolute;
+        margin-top: 1rem;
+    }
+    #newws .header-menu-1 .box-gia {
+        display: contents;
+    }
+    #list-product{
+        display: block;
+    }
+    #list-product .col-3{
+        width: 100%;
+    }
+    h2::after {
+        left: 26%;
+    }
 }

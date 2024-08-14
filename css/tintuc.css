@@ -11,6 +11,8 @@ h2 {
 
 #news {
     background-color: #D3D3D3;
+    margin-top: 100px;
+    position: relative;
 }
 
 #news .container-x {
@@ -78,6 +80,16 @@ h2::after {
 }
 footer{
     background-color: #D3D3D3;
+}
+.box-product .imgs{
+    overflow: hidden;
+}
+.box-product img{
+    max-width: 100%;
+    transition: all 0.3 ease-in-out;
+}
+.box-product :hover img{
+    transform: scale(1.1);
 }
 /* footer */
 #bg {
@@ -162,5 +174,13 @@ h6::after {
 #bg  {
     position: relative;
     top: 4rem;
+}
+@media only screen and (max-width:767px) {
+    #news .row{
+        display: block;
+    }
+    #list-product .col-4{
+        width: 100%;
+    }
 }
 

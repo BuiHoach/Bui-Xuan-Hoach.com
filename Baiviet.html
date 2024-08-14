@@ -18,38 +18,47 @@
 <body>
     <header>
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between header-bgr">
                 <div class="header-logo">
                     <img class="w-100" src="/img/logo.jpg" alt="logo">
                 </div>
                 <nav id="header-nav">
-                    <div class="nav-icon">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                    </div>
-                    <ul id="header-menu" class="d-flex justify-content-between align-items-center h-100">
+                    <ul class="header-menu ">
                         <li>
-                            <a href="index.html">Trang chủ</a>
+                            <a href="/Photoshop.html">Trang chủ</a>
                         </li>
                         <li>
-                            <a href="gioithieu.html">Giới thiệu</a>
+                            <a href="/Gioithieu.html">Giới thiệu</a>
                         </li>
                         <li>
-                            <a href="#">Sản phẩm</a>
+                            <a href="/Sanpham.html">Sản phẩm</a>
                         </li>
                         <li>
-                            <a href="#">Tin tức</a>
+                            <a href="/Tintuc.html">Tin tức</a>
                         </li>
                         <li>
-                            <a href="#">Đối tác</a>
+                            <a href="/Đoitac.html">Đối tác</a>
                         </li>
                         <li>
-                            <a href="#">liên hệ</a>
+                            <a href="/Lienhe.html">liên hệ</a>
                         </li>
                     </ul>
+
                 </nav>
+                <div class="nav-icon" >
+                    <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
+                </div>
             </div>
         </div>
     </header>
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-icon').click(function () {
+                $('.header-menu').toggleClass('active');
+            });
+        });
+    </script>
     <section id="newws">
         <div class="container">
             <div class="header-menu">

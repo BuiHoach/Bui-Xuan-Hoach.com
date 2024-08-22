@@ -83,6 +83,7 @@
 
 
 }
+
 .carousel-item img {
     height: 250px;
 }
@@ -204,93 +205,10 @@ section {
 .box-product :hover img {
     transform: scale(1.1);
 }
-.check img{
-    width: 100%;
-}
-footer {
-    background-color: #363636;
-    height: 10rem;
-}
-
-.container h6 {
-    color: #D3D3D3;
-    padding-top: 2rem;
-
-}
-
-.container h5 {
-    color: #D3D3D3;
-    font-family: monospace;
-    font-size: 1rem;
-    font-family: Gotham-Medium;
-}
-
-.box-distance span {
-    padding-right: 10px;
-    color: #D3D3D3;
-
-}
-
-.box-distance a {
-    color: #D3D3D3;
-    font-size: 15px;
-    font-family: Gotham-Thin;
-}
-
-h6 {
-    position: relative;
-    text-transform: uppercase;
-    font-family: Gotham-Medium;
-    font-size: 15px;
-}
-
-h6::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 3rem;
-    height: 3px;
-    left: 0%;
-    background-color: #D3D3D3;
-}
-
-.box-distance p {
-    margin-bottom: 0;
-    color: #D3D3D3;
-    font-size: 15px;
-    margin-bottom: 5px;
-    font-family: Gotham-Thin;
-
-}
-
-.text-center h6::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 3rem;
-    height: 3px;
-    left: 36%;
-    background-color: #D3D3D3;
-}
 
 .check img {
-    width: 40%;
-    height: 50px;
-    margin-top: 1.1rem;
+    width: 100%;
 }
-
-.box-icons img {
-    height: 25px;
-    margin-bottom: 14px;
-    padding: 0 5px;
-    color: #D3D3D3;
-}
-
-.box-icons i {
-    color: #D3D3D3;
-    font-size: 30px !important;
-}
-
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     section {
@@ -410,36 +328,46 @@ h6::after {
     #banner {
         display: block;
     }
+
     #news .container-x {
         top: 0rem;
     }
-    .check img{
+
+    .check img {
         width: 50%;
     }
+
     #banner .box-banner {
         position: absolute;
         top: -9rem;
         left: 9.5rem;
     }
+
     .cl-or {
-        font-size: 20px;  
+        font-size: 20px;
+        margin-left: -1rem;
     }
+
     .cl-blue {
         color: #2c2e53;
         font-size: 15px;
     }
+
     .mx-4 {
         margin-right: 0 !important;
         margin-left: 0rem !important;
     }
+
     #banner button {
         padding: .1rem .5rem;
-        margin-left: 4rem;
+        margin-left: 3rem;
     }
-    #list-product .col-3{
+
+    #list-product .col-3 {
         width: 50%;
         display: block;
     }
+
     h2::after {
         left: 23%;
     }

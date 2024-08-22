@@ -122,7 +122,7 @@
 #newws .header-menu-1 {
     margin-left: 38px;
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 #news {
@@ -164,7 +164,7 @@
 }
 
 #news .container-x {
-    top: 5rem;
+    top: 4rem;
 
 }
 
@@ -206,7 +206,7 @@ h2::after {
 
 #news {
     background-color: #F3F3F3;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
 }
 
 #news .container-x {
@@ -365,7 +365,6 @@ h6::after {
 } */
 #bg {
     position: relative;
-    top: 5.5rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
@@ -505,7 +504,7 @@ h6::after {
     }
     #news {
         background-color: #F3F3F3;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
     }
     #list-product{
         display: block;

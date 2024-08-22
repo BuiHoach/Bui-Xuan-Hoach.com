@@ -552,90 +552,6 @@ h2::after {
 }
 
 /* Liên hệ */
-/* footer */
-footer {
-    background-color: #363636;
-    height: 10rem;
-}
-
-.container h6 {
-    color: #D3D3D3;
-    padding-top: 2rem;
-
-}
-
-.container h5 {
-    color: #D3D3D3;
-    font-family: monospace;
-    font-size: 1rem;
-    font-family: Gotham-Medium;
-}
-
-.box-distance span {
-    padding-right: 10px;
-    color: #D3D3D3;
-
-}
-
-.box-distance a {
-    color: #D3D3D3;
-    font-size: 15px;
-    font-family: Gotham-Thin;
-}
-
-h6 {
-    position: relative;
-    text-transform: uppercase;
-    font-family: Gotham-Medium;
-    font-size: 15px;
-}
-
-h6::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 3rem;
-    height: 3px;
-    left: 0%;
-    background-color: #D3D3D3;
-}
-
-.box-distance p {
-    margin-bottom: 0;
-    color: #D3D3D3;
-    font-size: 15px;
-    margin-bottom: 5px;
-    font-family: Gotham-Thin;
-
-}
-
-.text-center h6::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 3rem;
-    height: 3px;
-    left: 36%;
-    background-color: #D3D3D3;
-}
-
-.check img {
-    width: 40%;
-    height: 50px;
-    margin-top: 1.1rem;
-}
-
-.box-icons img {
-    height: 25px;
-    margin-bottom: 14px;
-    padding: 0 5px;
-    color: #D3D3D3;
-}
-
-.box-icons i {
-    color: #D3D3D3;
-    font-size: 30px !important;
-}
 
 /* .img-ghe img{
     top: 100%;
@@ -645,7 +561,7 @@ h6::after {
     position: relative;
 }
 
-@media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+@media only screen and (min-width: 678px) and (max-width:1024px) {
     #product {
         padding-top: 0;
     }
@@ -963,7 +879,7 @@ h6::after {
     }
 
     #lien-he {
-        height: 17rem;
+        height: 19rem;
     }
 
     #lien-he .btn-lien-he {

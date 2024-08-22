@@ -309,7 +309,7 @@ h1::after {
 }
 
 footer {
-    background-color: #D3D3D3;
+    background-color: #D3D3D3 !important;
 }
 
 .container h6 {
@@ -482,7 +482,7 @@ h6::after {
         font-size: 40px;
     }
     .box-gia button {
-        width: 17.2rem;
+        width: 100%;
     }
     .box-gia img {
         height: 45px;

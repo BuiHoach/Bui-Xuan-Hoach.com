@@ -378,7 +378,12 @@ h6::after {
         background-color: #D3D3D3;
         border: 1px solid #D3D3D3;
     }
-
+    .box-grup {
+        display: none;
+    }
+    #newws .header-menu-1 .box-sap-xep{
+        display: none;
+    }
     /* footer */
     #bg {
         background-color: #363636;
@@ -455,24 +460,19 @@ h6::after {
         color: #D3D3D3;
         font-size: 30px !important;
     }
-
-    /* .img-ghe img{
-    top: 100%;
-    left: 50%;
-} */
     #bg {
         position: relative;
         top: 2rem;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .box-sap-xep{
         display: none;
     }
     #banner .box-banner {
         position: absolute;
         top: 3rem;
-        left: 9rem;
+        left: 50%;
     }
     .cl-blue {
         font-size: 15px;

@@ -412,8 +412,8 @@ h2::after {
 /* Liên hệ */
 #lien-he {
     background-image: url("/img/AnhCatTC/lienhe-bg.jpg");
-    height: 10rem;
-
+    /* height: 10rem; */
+    padding-bottom: 5%;
 }
 
 #lien-he .box-lien-he {
@@ -878,13 +878,14 @@ h2::after {
         font-size: 1rem;
     }
 
-    #lien-he {
+    /* #lien-he {
         height: 19rem;
-    }
+    } */
 
     #lien-he .btn-lien-he {
         display: block;
         margin-left: 0rem;
+        margin-top: .5rem;
     }
 
     /* input */

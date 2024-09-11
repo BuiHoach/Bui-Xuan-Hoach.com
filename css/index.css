@@ -24,6 +24,7 @@
     text-transform: uppercase;
     border: none;
     font-size: 1rem;
+    transition: all ease 0.3s;
 }
 
 #banner .container {
@@ -78,7 +79,33 @@
 }
 
 /* End Category */
+/* Liên hệ */
+@keyframes pulseGrow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); } /* To ra 20% */
+    100% { transform: scale(1); }
+}
 
+.pulse-effect {
+    display: inline-block; /* Để áp dụng animation */
+}
+
+.pulse-effect button {
+    animation: pulseGrow 1s infinite; /* Tạo hiệu ứng phồng to */
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pulse-effect button:hover {
+    background-color: #e64a19;
+}
+/* lh */
 
 /* Begin List Product */
 #product {
@@ -94,7 +121,9 @@ h2 {
     font-family: Gotham-Ultra;
     position: relative;
     margin-bottom: 2.6rem;
+    transition: all ease 0.5s;
 }
+
 
 h2::after {
     content: "";
@@ -106,7 +135,10 @@ h2::after {
     height: 0.5rem;
     background-color: #bd945f;
 }
-
+h2:hover {
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
 .product-title {
     font-size: 0.75rem;
     font-family: Gotham-Ultra;
@@ -265,18 +297,28 @@ h2::after {
     text-align: justify;
 }
 
-#about-us .list-img-about-us {
-    display: flex;
-    justify-content: space-between;
-}
-
 #about-us .list-img-about-us .img-about-us {
     position: relative;
 }
 
-#about-us .list-img-about-us img {
-    width: 97%;
+.list-img-about-us {
+    display: flex; /* Sắp xếp các hình ảnh theo hàng ngang */
+    gap: 10px; /* Tạo khoảng cách giữa các phần tử */
+    flex-wrap: wrap; 
+    position: relative;
 }
+
+.img-about-us {
+    margin: 5px; /* Tạo khoảng cách giữa các khung ảnh */
+    flex: 1 1 calc(25% - 10px); /* Mỗi ảnh chiếm 25% chiều rộng trừ đi khoảng cách */
+}
+
+.img-about-us img {
+    width: 100%; /* Đảm bảo hình ảnh vừa với khung chứa */
+    height: auto; /* Giữ nguyên tỷ lệ của ảnh */
+}
+
+
 
 #about-us .img-about-us a {
     position: absolute;
@@ -396,7 +438,7 @@ h2::after {
 
 #lists-doi-tac {
     display: flex;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 
 }
 
@@ -407,6 +449,7 @@ h2::after {
 .img-doi-tac img {
     width: 100%;
 }
+
 
 /*End Đối tác */
 /* Liên hệ */
@@ -453,7 +496,7 @@ h2::after {
 #lien-he .lien-he-right {
     width: 60%;
     display: flex;
-    /* justify-content: space-between; */
+    
 }
 
 #lien-he .form-label {
@@ -509,14 +552,34 @@ h2::after {
 
 }
 
+
+
 /* hover img */
+.img-about-us {
+    overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài div khi hover */
+    position: relative;
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.img-about-us img {
+    max-width: 100%; /* Đảm bảo ảnh vừa với khung div */
+    transition: all ease 0.5s; /* Thêm hiệu ứng chuyển động mượt mà khi hover */
+    display: block; /* Đảm bảo ảnh không có khoảng trắng bên dưới */
+    
+}
+
+.img-about-us:hover img {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
 .box-product .imgs {
     overflow: hidden;
 }
 
 .box-product img {
     max-width: 100%;
-    transition: all 0.3 ease-in-out;
+    transition: all ease 0.5s;
 }
 
 .box-product :hover img {
@@ -530,7 +593,7 @@ h2::after {
 
 .news-left img {
     max-width: 100%;
-    transition: all 0.3 ease-in-out;
+    transition: all ease 0.5s;
 }
 
 .news-left :hover img {
@@ -540,7 +603,7 @@ h2::after {
 /* hover */
 .item-news img {
     max-width: 100%;
-    transition: all 0.3 ease-in-out;
+    transition: all ease 0.5s;
 }
 
 .item-news:hover img {
@@ -824,21 +887,21 @@ h2::after {
     #doi-tac {
         margin-top: -3rem;
     }
-    #lists-doi-tac {
+    /* #lists-doi-tac {
         display: flex;
         margin-bottom: 0;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+    } */
 
-    #doi-tac .slick-slider .slick-track {
+    /* #doi-tac .slick-slider .slick-track {
         margin-bottom: 3rem;
-        width: 100% !important;
-    }
+        width: 90% ;
+    } */
 
-    .center img {
+    /* .center img {
         translate: 50%;
-    }
+    } */
     /* ghe */
     .img-ghe img {
         display: none;

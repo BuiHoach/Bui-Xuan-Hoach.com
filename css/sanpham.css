@@ -5,7 +5,7 @@
 
 .header-menu-1 {
     padding-top: 1.5rem;
-    border: #D3D3D3 1px solid;
+    border: #f3f3f3 1px solid;
 }
 
 #carouselExampleControls span {
@@ -117,7 +117,7 @@ h2::after {
 }
 
 #news {
-    background-color: #D3D3D3;
+    background-color: #f3f3f3;
 }
 
 #news .container-x {
@@ -175,7 +175,7 @@ h2::after {
 }
 
 section {
-    background-color: #D3D3D3;
+    background-color: #f3f3f3;
 }
 
 .icon-star {
@@ -199,7 +199,7 @@ section {
 
 .box-product img {
     max-width: 100%;
-    transition: all 0.3 ease-in-out;
+    transition: all ease 0.5s;
 }
 
 .box-product :hover img {
@@ -212,8 +212,8 @@ section {
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     section {
-        background-color: #D3D3D3;
-        border: 1px solid #D3D3D3;
+        background-color: #f3f3f3;
+        border: 1px solid #f3f3f3;
     }
 
     /* footer */
@@ -222,29 +222,29 @@ section {
     }
 
     footer {
-        background-color: #D3D3D3;
+        background-color: #f3f3f3;
     }
 
     .container h6 {
-        color: #D3D3D3;
+        color: #f3f3f3;
         padding-top: 2rem;
 
     }
 
     .container h5 {
-        color: #D3D3D3;
+        color: #f3f3f3;
         /* font-family: monospace; */
         font-size: 1rem;
     }
 
     .box-distance span {
         padding-right: 10px;
-        color: #D3D3D3;
+        color: #f3f3f3;
 
     }
 
     .box-distance a {
-        color: #D3D3D3;
+        color: #f3f3f3;
         font-size: 13px;
     }
 
@@ -263,12 +263,12 @@ section {
         width: 3rem;
         height: 3px;
         left: 0%;
-        background-color: #D3D3D3;
+        background-color: #f3f3f3;
     }
 
     .box-distance p {
         margin-bottom: 0;
-        color: #D3D3D3;
+        color: #f3f3f3;
         font-size: 13px;
         margin-bottom: 5px;
 
@@ -285,7 +285,7 @@ section {
         width: 3rem;
         height: 3px;
         left: 36%;
-        background-color: #D3D3D3;
+        background-color: #f3f3f3;
     }
 
     .check img {
@@ -298,11 +298,11 @@ section {
         height: 25px;
         margin-bottom: 14px;
         padding: 0 5px;
-        color: #D3D3D3;
+        color: #f3f3f3;
     }
 
     .box-icons i {
-        color: #D3D3D3;
+        color: #f3f3f3;
         font-size: 30px !important;
     }
 

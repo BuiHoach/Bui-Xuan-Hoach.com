@@ -86,7 +86,7 @@ footer{
 }
 .box-product img{
     max-width: 100%;
-    transition: all 0.3 ease-in-out;
+    transition: all ease 0.5s;
 }
 .box-product :hover img{
     transform: scale(1.1);

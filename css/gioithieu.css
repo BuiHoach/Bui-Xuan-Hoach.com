@@ -253,7 +253,19 @@ h6::after {
 #lien-he {
     position: relative;
 }
+/* hover */
+.box-product img {
+    max-width: 100%;
+    transition: all ease 0.5s;
+}
 
+.box-product:hover img {
+    transform: scale(1.1);
+}
+
+.box-product .img {
+    overflow: hidden;
+}
 @media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
     #list-product {
         width: 100%;

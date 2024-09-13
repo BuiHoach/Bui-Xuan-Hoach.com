@@ -62,7 +62,14 @@
     color: #2c2e53;
     font-family: Gotham-Ultra;
     margin: 0.5rem 0 2rem 0;
+    transition: all ease 0.5s;
 
+}
+/* hover */
+#category h3:hover{
+    color: red;
+    letter-spacing: 0.1em;
+    cursor: pointer;
 }
 
 #category .container {
@@ -420,15 +427,39 @@ h2:hover {
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
 }
+/* hover */
+#news .content-news h4:hover{
+    color: rgb(170, 42, 42);
+}
 
 #news .item-news {
     margin-bottom: 1rem;
 }
 
-#news .news-right a {
-    color: #bd945f;
+@keyframes blinkAndScale {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+      color: #bd945f; /* Màu sắc của liên kết */
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+      color: #ffcc00; /* Màu sắc khi nhấp nháy (có thể thay đổi theo ý thích) */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      color: #bd945f; /* Trở lại màu sắc gốc */
+    }
+  }
+  
+  #news .news-right a {
     text-transform: uppercase;
-}
+    animation: blinkAndScale 1s infinite; /* Áp dụng animation */
+    transition: color 0.3s; /* Thay đổi màu sắc mượt mà */
+  }
+  
 
 /* End News */
 /*Begin Đối tác */
@@ -474,12 +505,16 @@ h2:hover {
 
 #lien-he .lien-he-left>div {
     color: #fff;
+    transition: all ease 0.5s;
 }
-
+#lien-he .lien-he-left>div:hover{
+    color: rgb(170, 42, 42);
+}
 #lien-he .lien-he-left .lien-he-bottom {
     font-family: Gotham-Ultra;
     position: relative;
     padding-bottom: 0.5rem;
+    
 }
 
 #lien-he .lien-he-left .lien-he-bottom::after {
@@ -487,10 +522,16 @@ h2:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #fff; /* Màu nền mặc định */
     height: 0.5rem;
     width: 5rem;
     z-index: 3;
+    transition: all ease 0.5s; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+/* Đổi màu nền khi hover */
+#lien-he .lien-he-left .lien-he-bottom:hover::after {
+    background-color: rgb(170, 42, 42); /* Màu nền mới khi hover */
 }
 
 #lien-he .lien-he-right {
@@ -502,8 +543,11 @@ h2:hover {
 #lien-he .form-label {
     color: #fff;
     font-size: 0.8rem;
+    transition: all ease 0.5s; 
 }
-
+#lien-he .form-label:hover{
+    color:rgb(170, 42, 42) ;
+}
 #lien-he .lien-he-right .input-lien-he {
     width: 21.5rem;
     padding-top: 2rem;
@@ -513,7 +557,46 @@ h2:hover {
     width: 100%;
     height: 2.6rem;
     border-radius: 0;
+    border: 3px solid #ccc; /* Đường viền mặc định */
+    background-color: white; /* Màu nền mặc định */
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà cho border */
 }
+
+/* Hiệu ứng khi hover vào thẻ input */
+#lien-he input:hover {
+    animation: rainbowBorder 2s linear infinite; /* Kích hoạt hoạt ảnh cầu vồng */
+}
+
+/* Định nghĩa hoạt ảnh cầu vồng */
+@keyframes rainbowBorder {
+    0% {
+        border-color: #FF0000; /* Đỏ */
+    }
+    14% {
+        border-color: #FF7F00; /* Cam */
+    }
+    28% {
+        border-color: #FFFF00; /* Vàng */
+    }
+    42% {
+        border-color: #00FF00; /* Xanh lá cây */
+    }
+    57% {
+        border-color: #0000FF; /* Xanh dương */
+    }
+    71% {
+        border-color: #4B0082; /* Chàm */
+    }
+    85% {
+        border-color: #8B00FF; /* Tím */
+    }
+    100% {
+        border-color: #FF0000; /* Quay lại Đỏ */
+    }
+}
+
+
+
 
 #lien-he .btn-lien-he {
     display: flex;
@@ -528,8 +611,27 @@ h2:hover {
     border: 0;
     font-size: 0.8rem;
     height: 2.6rem;
+    border: 3px solid #ccc; /* Đường viền mặc định */
+    background-color: white; /* Màu nền mặc định */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà cho border */
 }
 
+/* Hiệu ứng khi hover vào thẻ input */
+#lien-he button:hover {
+    animation: rainbowBorder 2s linear infinite; /* Kích hoạt hoạt ảnh cầu vồng */
+}
+/* Định nghĩa hiệu ứng chuyển động */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 #lien-he.container {
     position: relative;
 }
@@ -538,13 +640,14 @@ h2:hover {
     position: absolute;
     top: -2rem;
 }
-
+/* Áp dụng hiệu ứng chuyển động cho hình ảnh */
 .img-ghe img {
     height: 270px;
     width: 140px;
     margin-left: 1rem;
-
+    animation: slide 1s ease-in-out infinite;
 }
+
 
 #lien-he .img-ghe {
     position: absolute;

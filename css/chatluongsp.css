@@ -386,6 +386,18 @@ h6::after {
     color: #D3D3D3;
     font-size: 30px !important;
 }
+.imgs {
+    overflow: hidden;
+}
+
+.box-product img {
+    max-width: 100%;
+    transition: all ease 0.5s;
+}
+
+.box-product :hover img {
+    transform: scale(1.1);
+}
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
     .box-gia button {

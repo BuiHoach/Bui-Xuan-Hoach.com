@@ -84,42 +84,71 @@ h2::after {
     top: -2rem;
 
 }
-
-.box-product img {
-    padding-top: 3rem;
-    padding-right: 2rem;
-    margin-bottom: 5rem;
-    height: 20rem;
+.box-product{
+    margin: 3rem 0rem;
 }
-
+.box-p{
+    padding-left: 2rem;
+}
 h3 {
-    padding-top: 3rem;
     color: #B69A78;
     font-family: monospace;
     font-size: 25px;
     font-family: Gotham-Ultra;
 }
-
-/* .box-product {
-    margin-left: 1rem;
-} */
-
 .box-input input {
     display: block;
     background-color: #fff;
     border: 2px solid #B69A78;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     padding: 5px 1rem;
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
 }
 
-button {
-    background-color: #bd945f;
-    padding: .5rem 2rem;
-    border: 0;
-    color: #fff;
-    font-family: monospace;
+/* Tạo hiệu ứng màu cầu vồng */
+@keyframes rainbow-border {
+    0% { border-color: red; }
+    16% { border-color: orange; }
+    33% { border-color: yellow; }
+    50% { border-color: green; }
+    66% { border-color: blue; }
+    83% { border-color: indigo; }
+    100% { border-color: violet; }
 }
+
+/* Áp dụng hiệu ứng khi hover vào input */
+.box-input input:hover {
+    animation: rainbow-border 2s infinite; /* Hiệu ứng cầu vồng liên tục mỗi 2 giây */
+}
+
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  button {
+    background-color: #007bff; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Xóa viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 5px; /* Bo tròn các góc */
+    animation: blink 1s infinite; /* Áp dụng animation */
+  }
+  
 
 .page-links {
     padding: 1px 5px;

@@ -4,8 +4,7 @@
     list-style: none;
     font-size: 20px;
     font-family: Gotham-Medium;
-}
-
+} 
 ul {
     padding: 0;
     margin: 0;
@@ -74,6 +73,7 @@ header {
     float: right;
     display: none;
 }
+
 .header-menu {
     display: flex;
     justify-content: space-between;
@@ -90,26 +90,38 @@ footer {
 .container h6 {
     color: #D3D3D3;
     padding-top: 2rem;
-
+    transition: all ease 0.5s;
 }
-
+h6:hover{
+    color: rgb(255, 0, 191);
+}
 .container h5 {
     color: #D3D3D3;
     font-family: monospace;
     font-size: 1rem;
     font-family: Gotham-Medium;
+    transition: all ease 0.5s;
 }
-
+h5:hover{
+    color: rgb(255, 0, 191);
+}
 .box-distance span {
     padding-right: 10px;
     color: #D3D3D3;
-
+    transition: all ease 0.5s;
 }
-
+.box-distance span:hover{
+    color: rgb(255, 0, 191);
+}
 .box-distance a {
     color: #D3D3D3;
     font-size: 15px;
     font-family: Gotham-Thin;
+    transition: all ease 0.5s;
+}
+/* Đổi màu khi hover vào liên kết */
+.box-distance a:hover {
+    color: #FF4500; /* Màu mới khi hover */
 }
 
 h6 {
@@ -127,6 +139,12 @@ h6::after {
     height: 3px;
     left: 0%;
     background-color: #D3D3D3;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu mượt mà */
+}
+
+/* Đổi màu khi hover vào h6 */
+h6:hover::after {
+    background-color: #FF4500; /* Màu mới khi hover */
 }
 
 .box-distance p {
@@ -135,35 +153,58 @@ h6::after {
     font-size: 15px;
     margin-bottom: 5px;
     font-family: Gotham-Thin;
+    transition: background-color 0.3s ease;
 
 }
-
-.text-center h6::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 3rem;
-    height: 3px;
-    left: 36%;
-    background-color: #D3D3D3;
+/* Đổi màu khi hover vào liên kết */
+.box-distance p:hover {
+    color: #FF4500; /* Màu mới khi hover */
 }
+
 
 .check img {
     width: 40%;
     height: 50px;
     margin-top: 1.1rem;
+    transition: all ease 0.5s; /* Hiệu ứng chuyển động mượt mà */
 }
+
+/* Phóng to ảnh khi hover */
+.check img:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+
 
 .box-icons img {
     height: 25px;
     margin-bottom: 14px;
     padding: 0 5px;
     color: #D3D3D3;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
 }
+
+/* Phóng to ảnh khi hover */
+.box-icons img:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+
 
 .box-icons i {
     color: #D3D3D3;
     font-size: 30px !important;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Phóng to biểu tượng khi hover */
+.box-icons i:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+h1:hover {
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+h1 {
+    transition: all ease 0.5s;
 }
 h2:hover {
     letter-spacing: 0.3em;
@@ -172,7 +213,20 @@ h2:hover {
 h2 {
     transition: all ease 0.5s;
 }
-
+.product-title{
+    transition: all ease 0.5s;
+}
+.product-title:hover{
+    color: red;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.product-size:hover{
+    color: blue;
+}
+.product-price:hover{
+    color:orangered;
+}
 
 @media (min-width: 1400px) {
 
@@ -200,6 +254,27 @@ h2 {
         display: block;
         margin-top: 40px;
     }
+    .nav-icon {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .nav-icon i {
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+       
+    }
+    
+    .nav-icon.active i {
+        transform: rotate(90deg); /* Xoay 90 độ */
+        color: red; /* Đổi màu khi chuyển đổi */
+    }
+    
     .active {
         display: block !important;
     }

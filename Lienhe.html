@@ -48,20 +48,12 @@
                     </ul>
 
                 </nav>
-                <div class="nav-icon" >
+                <div class="nav-icon">
                     <label for="toggleClass"><i class="fa-solid fa-bars "></i></label>
                 </div>
             </div>
         </div>
     </header>
-    <script>
-
-        $(document).ready(function () {
-            $('.nav-icon').click(function () {
-                $('.header-menu').toggleClass('active');
-            });
-        });
-    </script>
     <section id="banner">
         <div class="container">
             <div class="box-banner">
@@ -81,16 +73,16 @@
                             <img class="w-100" src="/img/AnhCat/sp-1.jpg" alt="sp-1">
                         </div>
                     </div>
-                    <div class="box-product col-6">
+                    <div class="box-product col-6 box-p">
                         <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
                         <div class="box-input">
                             <input type="text" name="hoTen" id="hoTen" placeholder="Họ Tên">
                             <div class="errorhoTen cl-red">Vui lòng không để trống Họ Tên</div>
                             <input type="text" name="Email" id="Email" placeholder="Email">
                             <div class="errorEmail cl-red">Vui lòng không để trống Email</div>
-                            <input type="text"name="Sdt" id="Sdt" placeholder="Số điện thoại">
+                            <input type="text" name="Sdt" id="Sdt" placeholder="Số điện thoại">
                             <div class="errorSdt cl-red">Vui lòng không để trống Số điện thoại</div>
-                            <input type="text"name="noiDung"id="noiDung" placeholder="Nội dung">
+                            <input type="text" name="noiDung" id="noiDung" placeholder="Nội dung">
                             <div class="errornoiDung cl-red">Vui lòng không để trống Nội dung</div>
                             <button>Gửi</button>
                         </div>
@@ -100,54 +92,54 @@
     </section>
     <script>
         //   Systax => $(selector).event(khối lệnh)
-            $(".errorhoTen").hide();
-            $(".errorEmail").hide();
-            $(".errorSdt").hide();
-            $(".errornoiDung").hide();
-            $("button").click(function(event){
-                // không chuyển trang
-                event.preventDefault();
-                // lấy value của thẻ HTML có id là userName
-                var hoTen = $("#hoTen").val();
-                  // lấy value của thẻ HTML có id là password
-                var Email = $("#Email").val();
-                var Sdt= $("#Sdt").val();
-                var noiDung = $("#noiDung").val();
-                if(hoTen== null ||hoTen == ""){
-                    // thêm class
-                    // $(".errorUser").addClass("active");
-                    //  style cho  các thẻ chứ class errorUser
-                    // $(".errorUser").css("color","red")
-                    // sử dụng hiệu ứng trong jquery
-                    $(".errorhoTen").show();
-                  
-                }else{
-                    $(".errorhoTen").hide();
-                }
-                if(Email== null || Email== ""){
-                    // sử dụng hiệu ứng trong jquery
-                    $(".errorEmail").show();
-                }
-                else{
-                    $(".errorEmail").hide();
-                }
-                if(Sdt== null || Sdt== ""){
-                    // sử dụng hiệu ứng trong jquery
-                    $(".errorSdt").show();
-                }
-                else{
-                    $(".errorSdt").hide();
-                }
-                if(noiDung== null || noiDung== ""){
-                    // sử dụng hiệu ứng trong jquery
-                    $(".errornoiDung").show();
-                }
-                else{
-                    $(".errornoiDung").hide();
-                }
-            });
-         </script>
-        
+        $(".errorhoTen").hide();
+        $(".errorEmail").hide();
+        $(".errorSdt").hide();
+        $(".errornoiDung").hide();
+        $("button").click(function (event) {
+            // không chuyển trang
+            event.preventDefault();
+            // lấy value của thẻ HTML có id là userName
+            var hoTen = $("#hoTen").val();
+            // lấy value của thẻ HTML có id là password
+            var Email = $("#Email").val();
+            var Sdt = $("#Sdt").val();
+            var noiDung = $("#noiDung").val();
+            if (hoTen == null || hoTen == "") {
+                // thêm class
+                // $(".errorUser").addClass("active");
+                //  style cho  các thẻ chứ class errorUser
+                // $(".errorUser").css("color","red")
+                // sử dụng hiệu ứng trong jquery
+                $(".errorhoTen").show();
+
+            } else {
+                $(".errorhoTen").hide();
+            }
+            if (Email == null || Email == "") {
+                // sử dụng hiệu ứng trong jquery
+                $(".errorEmail").show();
+            }
+            else {
+                $(".errorEmail").hide();
+            }
+            if (Sdt == null || Sdt == "") {
+                // sử dụng hiệu ứng trong jquery
+                $(".errorSdt").show();
+            }
+            else {
+                $(".errorSdt").hide();
+            }
+            if (noiDung == null || noiDung == "") {
+                // sử dụng hiệu ứng trong jquery
+                $(".errornoiDung").show();
+            }
+            else {
+                $(".errornoiDung").hide();
+            }
+        });
+    </script>
+
     <footer>
         <div class="container ">
             <div class="row">
@@ -159,7 +151,8 @@
                     <div class="box-distance">
                         <a href=""><span><i class="fa-solid fa-phone"></i></span> 0986294276</a>
                         <br>
-                        <a href=""><span><i class="fa-sharp fa-regular fa-envelope"></i></i></span>cskh@HoangHoan.vn</a><br>
+                        <a href=""><span><i
+                                    class="fa-sharp fa-regular fa-envelope"></i></i></span>cskh@HoangHoan.vn</a><br>
                         <a href=""><span><i class="fa-solid fa-location-dot"></i>
                             </span>Số 1 Nguyễn Trãi,Thanh xuân,Hà Nội</a>
                     </div>
@@ -169,11 +162,11 @@
                         <h6>Về chúng tôi</h6>
                     </div>
                     <div class="box-distance">
-                      <p>Giới thiệu</p>
-                      <p>Sản phẩm</p>
-                      <p>Tin tức</p>
-                      <p>Đối tác</p>
-                      <p>Liên hệ</p>
+                        <p>Giới thiệu</p>
+                        <p>Sản phẩm</p>
+                        <p>Tin tức</p>
+                        <p>Đối tác</p>
+                        <p>Liên hệ</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -184,8 +177,8 @@
                         <a href=""><i class="fa-sharp fa-regular fa-envelope"></i></a>
                     </div>
                     <div class="check">
-                       <img src="/img/logoSaleNoti.png" alt="">
-                        
+                        <img src="/img/logoSaleNoti.png" alt="">
+
                     </div>
                 </div>
             </div>
@@ -196,6 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/css/photoshop.js"></script>
 </body>
 
 </html>

@@ -64,10 +64,7 @@ h2::after {
 .box-product img {
     margin-bottom: 1rem;
     height: 298px;
-   
-
 }
-
 
 h3 {
     padding-top: 3rem;
@@ -77,9 +74,44 @@ h3 {
     font-family: Gotham-Ultra;
 }
 
-.box-product {
-    margin-left: 3rem;
+/* Thiết lập kiểu dáng chung cho section */
+#news {
+    background-color: #f9f9f9;
 }
+
+/* Kiểu dáng cho container */
+.container-x {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tiêu đề */
+#news h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Hình ảnh trong hộp sản phẩm */
+.box-product .image {
+    overflow: hidden;
+}
+
+.box-product .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng khi hover vào hình ảnh */
+.box-product .image img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
 
 .row {
     --bs-gutter-x: 0;
@@ -109,6 +141,7 @@ h2 {
     font-weight: bold;
     margin-bottom: .5rem;
     text-align: justify;
+    padding-left: 2rem;
 }
 
 .box-product span {
@@ -119,7 +152,6 @@ h2 {
 }
 
 .col-12 {
-    width: 89%;
     text-align: center;
 }
 
@@ -311,12 +343,12 @@ h6::after {
         background-color: #fff;
         border: 1px solid #fff;
     }
-    #list-product{
+    #list-products{
         margin: 0 1rem;
         
     }
     
-    #list-product .col-5{
+    #list-products .col-5{
         width: 100%;
         margin-left: 0;
 
@@ -325,14 +357,15 @@ h6::after {
     .box-product p {
         margin-bottom: 0rem;
         margin-top: .5rem;
+        padding-left: 0;
     }
     
-    #list-product .col-12{
+    #list-products .col-12{
         width: 100%;
         margin-left: 0;
         
     }
-    #list-product .col-12  {
+    #list-products .col-12  {
         text-align: justify;
     }
     #news .row {

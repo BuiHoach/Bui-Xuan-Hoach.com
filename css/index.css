@@ -16,7 +16,7 @@
     margin: 1.5rem 0 1.2rem;
 }
 
-#banner button {
+#banner .button-link  {
     font-family: Gotham-Ultra;
     padding: 1rem 1.5rem;
     background-color: #bd945f;
@@ -26,6 +26,7 @@
     font-size: 1rem;
     transition: all ease 0.3s;
 }
+
 
 #banner .container {
     position: relative;
@@ -97,7 +98,7 @@
     display: inline-block; /* Để áp dụng animation */
 }
 
-.pulse-effect button {
+.pulse-effect.button-link {
     animation: pulseGrow 1s infinite; /* Tạo hiệu ứng phồng to */
     font-size: 20px;
     padding: 10px 20px;
@@ -109,7 +110,7 @@
     transition: background-color 0.3s ease;
 }
 
-.pulse-effect button:hover {
+.pulse-effect.button-link :hover {
     background-color: #e64a19;
 }
 /* lh */
@@ -764,8 +765,9 @@ h2:hover {
         text-align: justify;
         width: 11.5rem;
         margin-left: -2rem;
-        font-size: .4rem;
+        font-size: 10px;
         font-weight: bold;
+        padding-left: 2rem;
 
     }
 
@@ -794,19 +796,15 @@ h2:hover {
         margin-left: 0 !important;
     }
 
-    .img-news img {
+    /* .img-news img {
         margin-left: -1.7rem;
-    }
+    } */
 
     #news .content-news {
         background-color: #bd945f;
         padding: 1rem 1rem 1rem 2rem;
         position: absolute;
         bottom: 0;
-        width: 91%;
-
-
-
     }
 
     #news .content-news p {

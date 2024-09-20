@@ -898,19 +898,26 @@ h2:hover {
 
     /* ban */
     #banner .box-banner {
-        position: absolute;
-        top: 2rem;
-        left: 1.5rem;
+        position: static; /* Điều chỉnh vị trí cho mobile */
+        margin: 0 auto;
+        padding: 2rem 0;
     }
 
+    #banner h3 {
+        font-size: 1.25rem; /* Giảm kích thước chữ cho mobile */
+    }
     #banner h3 span {
-        font-size: 28px;
+        font-size: 1.3rem;
     }
-
     #banner p {
-        width: 17rem;
+        font-size: 1rem; /* Giảm kích thước chữ cho đoạn văn */
+        line-height: 1.4;
     }
 
+    .pulse-effect {
+        font-size: 1rem; /* Giảm kích thước button */
+        padding: 8px 16px; /* Giảm padding cho button */
+    }
     /* about as */
     #category .list-category {
         margin: 0 1.5rem;

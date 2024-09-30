@@ -859,7 +859,7 @@ h2:hover {
     #lien-he .btn-lien-he {
         display: flex;
         margin-left: .5rem;
-        padding-top: 5rem;
+        /* padding-top: 5rem; */
     }
 
     #lien-he input {
@@ -894,7 +894,7 @@ h2:hover {
 
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
 
     /* ban */
     #banner .box-banner {

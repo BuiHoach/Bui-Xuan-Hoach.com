@@ -285,7 +285,7 @@ h6::after {
 .box-product .img {
     overflow: hidden;
 }
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 768px) and (max-width:1024px) {
     .col-5 {
         width: 100%;
         margin-bottom: 0;
@@ -313,7 +313,7 @@ h6::after {
 
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     #news .row {
         display: block;
     }
@@ -336,5 +336,8 @@ h6::after {
     }
     button {
         margin-bottom: 1rem;
+    }
+    .box-product{
+        margin: 0;
     }
 }
